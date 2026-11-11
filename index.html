@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+  <title>전성찬 ♥ 한경아 결혼합니다 | 2027.04.17</title>
+  <meta name="description" content="2027년 4월 17일 토요일, 전성찬 · 한경아의 결혼식에 초대합니다." />
+  <meta property="og:title" content="전성찬 ♥ 한경아 결혼합니다" />
+  <meta property="og:description" content="2027년 4월 17일 토요일" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://c-yeeun-01.github.io/wedding-0417/" />
+  <meta property="og:image" content="https://c-yeeun-01.github.io/wedding-0417/images/main.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Homemade+Apple&family=Montserrat:wght@400;500&family=Nanum+Myeongjo:wght@400;700&family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="intro-active">
+
+  <!-- 인트로: 하트 카드 -->
+  <div class="intro" id="intro" aria-label="청첩장 인트로">
+    <div class="scene" id="scene">
+      <header class="topbar">
+        <span>2027.04.17</span>
+        <span class="logo" aria-hidden="true"><i>S</i><i>K</i></span>
+        <span>WEDDING DAY//</span>
+      </header>
+
+      <span class="side side-left">전성찬</span>
+      <span class="side side-right">한경아</span>
+
+      <div class="card">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="heart heart-a" id="heartTarget"></div>
+        <div class="heart heart-b"><img src="images/g05.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    <div class="reveal-photo" id="revealPhoto" style="background-image:url('images/main.jpg')"></div>
+
+    <div class="hand-layer" aria-hidden="true">
+      <div class="card ghost">
+        <p class="hand hand-a">Will you be</p>
+        <p class="hand hand-b">our guest?</p>
+      </div>
+    </div>
+
+    <button class="skip" id="skipBtn" type="button">skip</button>
+  </div>
+
+  <main class="invitation">
+
+    <!-- 랜딩 사진 -->
+    <section class="hero">
+      <img src="images/main.jpg" alt="전성찬 한경아 웨딩 사진" />
+      <div class="hero-overlay">
+        <p class="hero-hand">we're getting married</p>
+        <p class="hero-date">2027 . 04 . 17</p>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- 이름 / 인사말 -->
+    <section class="section names-section reveal">
+      <p class="label">THE WEDDING OF</p>
+      <h1 class="names">전성찬 <span>&amp;</span> 한경아</h1>
+      <p class="names-hand">Seongchan &amp; Kyunga</p>
+
+      <div class="paper-note">
+        <span class="tape small" aria-hidden="true"></span>
+        <p class="greeting-text">
+          봄날의 따스함처럼 성큼 다가온 우리의 인연,<br />
+          햇살 아래 둘의 앞날이 찬란하게 피어납니다.<br /><br />
+          소중한 분들과 나누는 경사스러운 이 자리,<br />
+          함께 시작하는 봄날을 아름답게 축복해 주세요.<br /><br />
+          귀한 걸음으로 축복해 주신 마음 잊지 않고<br />
+          서로를 존중하며 예쁘게 잘 살겠습니다.
+        </p>
+      </div>
+
+      <div class="parents">
+        <p><span class="parent-names">전수철 · 심순애</span><span class="rel">의 장남</span><strong>성찬</strong></p>
+        <p><span class="parent-names">한화섭 · 이용희</span><span class="rel">의 장녀</span><strong>경아</strong></p>
+      </div>
+    </section>
+
+    <!-- 날짜 -->
+    <section class="section date-section reveal">
+      <p class="label">SAVE THE DATE</p>
+      <p class="big-date">04<span>.</span>17</p>
+      <p class="date-text">2027년 4월 17일 토요일 오후 2시</p>
+
+      <div class="calendar">
+        <p class="cal-month">April 2027</p>
+        <div class="cal-head">
+          <span class="sun">S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+        </div>
+        <div class="cal-body" id="calBody"></div>
+      </div>
+
+      <div class="countdown" id="countdown">
+        <div><strong data-unit="d">0</strong><span>days</span></div>
+        <div><strong data-unit="h">0</strong><span>hours</span></div>
+        <div><strong data-unit="m">0</strong><span>mins</span></div>
+        <div><strong data-unit="s">0</strong><span>secs</span></div>
+      </div>
+      <p class="dday-text" id="ddayText"></p>
+    </section>
+
+    <!-- 오시는 길 -->
+    <section class="section location reveal">
+      <p class="label">LOCATION</p>
+      <h2 class="section-title">오시는 길</h2>
+      <p class="venue-name">아산터미널웨딩홀 8층</p>
+      <p class="venue-addr" id="venueAddr">충남 아산시 번영로 225</p>
+      <p class="venue-tel"><a href="tel:041-544-9881">Tel. 041-544-9881</a></p>
+
+      <div class="map-buttons">
+        <a id="naverMap" target="_blank" rel="noopener">네이버 지도</a>
+        <a id="kakaoMap" target="_blank" rel="noopener">카카오맵</a>
+        <button type="button" data-copy-target="venueAddr">주소 복사</button>
+      </div>
+
+      <dl class="transport">
+        <dt>기차 · 전철</dt>
+        <dd>[장항선, 1호선] 온양온천역 도착 후<br />택시 이용 시 기본요금, 도보 15분 거리</dd>
+        <dt>버스</dt>
+        <dd>[고속] 아산(온양)터미널 도착 후 도보 1분<br />[직행] 아산터미널 도착</dd>
+        <dt>자가용</dt>
+        <dd>
+          <b>1. 경부고속도로</b><br />
+          천안IC (좌회전 후 첫 사거리에서 좌회전)<br />
+          → 독립기념관 이정표 삼거리 지날 때까지 직진<br />
+          → 예산/아산 방면으로 우회전 → 21번 국도 따라 아산 진입
+        </dd>
+        <dd>
+          <b>2. 서해안고속도로</b><br />
+          ① 서평택IC → 아산만 (아산방조제 지나서 계속 직진) → 아산 진입<br />
+          ② 오성IC → 현충사IC → 아산 진입
+        </dd>
+        <dd>
+          <b>3. 논산천안고속도로</b><br />
+          남천안IC → 천안 진입 → 배방역 → 온양아산 진입
+        </dd>
+        <dt>주차</dt>
+        <dd>건물 내 3층 ~ 7층 (5시간 무료 · 등록 없이 출차 가능)</dd>
+      </dl>
+    </section>
+
+    <!-- 연락하기 -->
+    <section class="section contact reveal">
+      <p class="label">CONTACT</p>
+      <h2 class="section-title">연락하기</h2>
+
+      <div class="contact-grid">
+        <div class="contact-col">
+          <p class="contact-side">신랑측</p>
+          <div class="contact-row"><span class="role">신랑</span><b>전성찬</b><a href="tel:01072008175" aria-label="전화">전화</a><a href="sms:01072008175" aria-label="문자">문자</a></div>
+          <div class="contact-row"><span class="role">아버지</span><b>전수철</b><a href="tel:01093328175" aria-label="전화">전화</a><a href="sms:01093328175" aria-label="문자">문자</a></div>
+          <div class="contact-row"><span class="role">어머니</span><b>심순애</b><a href="tel:01095228175" aria-label="전화">전화</a><a href="sms:01095228175" aria-label="문자">문자</a></div>
+        </div>
+        <div class="contact-col">
+          <p class="contact-side">신부측</p>
+          <div class="contact-row"><span class="role">신부</span><b>한경아</b><a href="tel:01024771560" aria-label="전화">전화</a><a href="sms:01024771560" aria-label="문자">문자</a></div>
+          <div class="contact-row"><span class="role">어머니</span><b>이용희</b><a href="tel:01030761560" aria-label="전화">전화</a><a href="sms:01030761560" aria-label="문자">문자</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 갤러리 -->
+    <section class="section gallery-section reveal">
+      <p class="label">GALLERY</p>
+      <h2 class="section-title">우리의 순간들</h2>
+      <div class="gallery" id="gallery"></div>
+      <button class="btn-line" id="moreBtn" type="button">사진 더보기</button>
+    </section>
+
+    <!-- 마음 전하실 곳 -->
+    <section class="section account reveal">
+      <p class="label">WITH HEART</p>
+      <h2 class="section-title">마음 전하실 곳</h2>
+      <p class="sub">축하의 마음을 담아 축의금을 전달해 보세요.</p>
+
+      <details class="acc">
+        <summary>신랑측 계좌번호</summary>
+        <ul>
+          <li><div><b>신랑 전성찬</b><span>카카오뱅크 3333-33-2168787</span></div><button type="button" data-copy="카카오뱅크 3333-33-2168787">복사</button></li>
+          <li><div><b>아버지 전수철</b><span>농협 302-1195-2144-11</span></div><button type="button" data-copy="농협 302-1195-2144-11">복사</button></li>
+          <li><div><b>어머니 심순애</b><span>농협 121086-56-163281</span></div><button type="button" data-copy="농협 121086-56-163281">복사</button></li>
+        </ul>
+      </details>
+      <details class="acc">
+        <summary>신부측 계좌번호</summary>
+        <ul>
+          <li><div><b>신부 한경아</b><span>카카오뱅크 3333-33-2168787</span></div><button type="button" data-copy="카카오뱅크 3333-33-2168787">복사</button></li>
+          <li><div><b>어머니 이용희</b><span>우체국 31236302187524</span></div><button type="button" data-copy="우체국 31236302187524">복사</button></li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- 마무리 -->
+    <section class="ending">
+      <div class="ending-card">
+        <span class="tape" aria-hidden="true"></span>
+        <div class="heart heart-end"><img src="images/g08.jpg" alt="" /></div>
+        <p class="ending-hand">Thank you</p>
+        <p class="ending-text">귀한 걸음으로 축복해 주셔서 감사합니다.<br />예쁘게 잘 살겠습니다.</p>
+      </div>
+      <button class="btn-paper" id="shareBtn" type="button">청첩장 링크 공유하기</button>
+      <p class="copy">SEONGCHAN &amp; KYUNGA · 2027.04.17</p>
+    </section>
+  </main>
+
+  <!-- 라이트박스 -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" type="button" aria-label="닫기">&times;</button>
+    <button class="lb-prev" type="button" aria-label="이전">&#8249;</button>
+    <img id="lbImg" alt="" />
+    <button class="lb-next" type="button" aria-label="다음">&#8250;</button>
+    <p class="lb-count" id="lbCount"></p>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
